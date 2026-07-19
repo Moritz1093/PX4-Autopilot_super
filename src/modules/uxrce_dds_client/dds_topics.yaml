@@ -24,7 +24,3 @@ subscriptions:
     type: px4_msgs::msg::OffboardControlMode
 
 subscriptions_multi:
-  - topic: /fmu/in/aux_global_position
-    type: px4_msgs::msg::AuxGlobalPosition
-    route_field: id
-    max_instances: 4
