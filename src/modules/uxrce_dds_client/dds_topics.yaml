@@ -4,23 +4,26 @@
 #
 #####
 publications:
-  - topic: fmu/out/vehicle_imu
+  - topic: /fmu/out/vehicle_imu
     type: px4_msgs::msg::VehicleImu
 
-  - topic: fmu/out/vehicle_odometry
+  - topic: /fmu/out/vehicle_odometry
     type: px4_msgs::msg::VehicleOdometry
 
-  - topic: fmu/out/vehicle_status
+  - topic: /fmu/out/vehicle_status
     type: px4_msgs::msg::VehicleStatus
 
+  - topic: /fmu/out/rc_channels
+    type: px4_msgs::msg::RcChannels
+
 subscriptions:
-  - topic: fmu/in/trajectory_setpoint
+  - topic: /fmu/in/trajectory_setpoint
     type: px4_msgs::msg::TrajectorySetpoint
 
-  - topic: fmu/in/vehicle_command
+  - topic: /fmu/in/vehicle_command
     type: px4_msgs::msg::VehicleCommand
 
-  - topic: fmu/in/offboard_control_mode
+  - topic: /fmu/in/offboard_control_mode
     type: px4_msgs::msg::OffboardControlMode
 
 subscriptions_multi:
