@@ -4,21 +4,27 @@
 #
 #####
 publications:
-  - topic: vehicle_imu
+  - topic: fm/out/vehicle_imu
     type: px4_msgs::msg::VehicleImu
 
-  - topic: vehicle_odometry
+  - topic: fm/out/vehicle_odometry
     type: px4_msgs::msg::VehicleOdometry
 
-  - topic: vehicle_status
+  - topic: fm/out/vehicle_status
     type: px4_msgs::msg::VehicleStatus
 
 subscriptions:
-  - topic: trajectory_setpoint
+  - topic: fm/in/trajectory_setpoint
     type: px4_msgs::msg::TrajectorySetpoint
 
-  - topic: vehicle_command
+  - topic: fm/in/vehicle_command
     type: px4_msgs::msg::VehicleCommand
 
-  - topic: offboard_control_mode
+  - topic: fm/in/offboard_control_mode
     type: px4_msgs::msg::OffboardControlMode
+
+subscriptions_multi:
+  - topic: /fmu/in/aux_global_position
+    type: px4_msgs::msg::AuxGlobalPosition
+    route_field: id
+    max_instances: 4
