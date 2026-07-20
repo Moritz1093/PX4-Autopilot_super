@@ -22,7 +22,13 @@ subscriptions:
 
   - topic: /fmu/in/vehicle_command
     type: px4_msgs::msg::VehicleCommand
-
+  
+  - topic: /fmu/in/vehicle_rates_setpoint
+    type: px4_msgs::msg::VehicleRatesSetpoint
+  
+  - topic: /fmu/in/vehicle_visual_odometry
+    type: px4_msgs::msg::VehicleOdometry
+  
   - topic: /fmu/in/offboard_control_mode
     type: px4_msgs::msg::OffboardControlMode
 
