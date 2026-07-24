@@ -99,3 +99,6 @@
 [submodule "src/drivers/ins/sbgecom/sbgECom"]
 	path = src/drivers/ins/sbgecom/sbgECom
 	url = https://github.com/PX4/sbgECom.git
+[submodule "Tools/simulation/gz"]
+	path = Tools/simulation/gz
+	url = https://github.com/Moritz1093/PX4-gazebo-models_for_SUPER.git
